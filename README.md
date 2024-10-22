@@ -1,8 +1,8 @@
 ## Hello World sou o Guilherme 👋
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning .
-- 😄 Pronouns: ...
+- 🔭 A Procura de Estagios ...
+- 🌱 Estou aprendendo JavaScript
+- 😄 Pronouns: ele/dele
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Guilherme1080&show_icons=true&theme=highcontrast) ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Guilherme1080&layout=compact&show_icons=true&theme=highcontrast)
 
