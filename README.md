@@ -24,3 +24,4 @@
   <a href="https://www.linkedin.com/in/guilherme-de-miranda-cardoso-5a2985309/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
   
 </div>
+![snake gif](https://github.com/Guilherme1080/Guilherme1080/blob/output/github-contribution-grid-snake.gif)
