@@ -4,5 +4,5 @@
 - 🌱 I’m currently learning .
 - 😄 Pronouns: ...
 
- https://github-readme-stats.vercel.app/api?username=Guilherme1080
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Guilherme1080)](https://github.com/Guilherme1080/github-readme-stats)
  
