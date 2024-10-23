@@ -1,4 +1,7 @@
-
+<div style="text-align: center;" align="center">
+  <h3>* GitHub Stats *</h3>
+  <br>
+</div>
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Guilherme1080&show_icons=true&theme=dark) ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Guilherme1080&layout=compact&show_icons=true&theme=dark)
 
