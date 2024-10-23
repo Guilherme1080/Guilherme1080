@@ -1,6 +1,6 @@
 
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Guilherme1080&show_icons=true&theme=highcontrast) ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Guilherme1080&layout=compact&show_icons=true&theme=highcontrast)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Guilherme1080&show_icons=true&theme=dark) ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Guilherme1080&layout=compact&show_icons=true&theme=dark)
 
 <i class="devicon-devicon-plain"></i>
 <div style="display: inline_block"><br>
