@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+.menu .logo {
+    font-size: 1.5rem;
+    color: #00ff00;
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.hero .text h2 {
+    color: #00ff00;
+}
+.hero .text h1 {
+    font-size: 2.5rem;
+}
+.hero .text h3 {
+    margin-top: -10px;
+}
+.hero .contact-button {
+    background-color: #00ff00;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.hero .image {
+    position: relative;
+}
+.hero .circle {
+    width: 200px;
+    height: 200px;
+    background-color: #00ff00;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+}
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+.theme-switcher {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+#theme-toggle {
+    background: none;
+    border: none;
+    color: #00ff00;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.fa-brands{
+    color: white;
+}
