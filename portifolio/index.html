@@ -1,52 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lucyan - Desenvolvedor Web Front-end</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Lucyan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">Guilherme De Miranda</div>
-      <ul class="menu">
-        <li><a href="#">Sobre mim</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Conhecimentos</a></li>
-        <li><a href="#">Fale comigo</a></li>
-      </ul>
-      <div class="social-icons">
-        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-        <a href="#"><img src="github-icon.png" alt="GitHub"></a>
-        <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-        <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="intro">
-      <div class="text-content">
-        <p class="greeting">HELLO WORLD 👋</p>
-        <h1>Eu sou Lucyan,</h1>
-        <p class="description">Desenvolvedor Web Front-end.</p>
-        <button class="contact-button">FALE COMIGO</button>
-      </div>
-      <div class="image-content">
-        <div class="image-circle">
-          <img src="laptop.png" alt="Laptop">
+    <header>
+        <div class="logo">Guilherme</div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#conhecimentos">Conhecimentos</a></li>
+                <li><a href="#contato">Fale comigo</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="#" class="instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="git">
+                <i class="fa-brands fa-git"></i>
+            </a>
+            <a href="#" class="linkedin">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
         </div>
-      </div>
+    </header>
+
+    <section class="hero">
+        <div class="content">
+            <p class="hello">HELLO WORLD 👋</p>
+            <h1>Eu sou Lucyan,</h1>
+            <h2>Desenvolvedor Web Front-end.</h2>
+            <a href="#contato" class="btn">FALE COMIGO</a>
+        </div>
+        <div class="image">
+            <img src="laptop.png" alt="Laptop">
+        </div>
     </section>
-  </main>
 
-  <footer>
-    <div class="theme-switch">
-      <button id="theme-toggle"></button>
+    <div class="theme-switcher">
+        <input type="checkbox" id="dark-mode-toggle">
+        <label for="dark-mode-toggle"></label>
     </div>
-  </footer>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

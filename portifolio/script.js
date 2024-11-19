@@ -1,9 +1,9 @@
-// Theme toggle functionality
-const themeToggle = document.getElementById('theme-toggle');
-
-themeToggle.addEventListener('click', () => {
-document.body.classList.toggle('light-theme');
+document.getElementById('dark-mode-toggle').addEventListener('change', function () {
+    if (this.checked) {
+        document.body.style.backgroundColor = '#fff';
+        document.body.style.color = '#000';
+    } else {
+        document.body.style.backgroundColor = '#000';
+        document.body.style.color = '#fff';
+    }
 });
-
-// Optional light theme styles
-document.body.classList.add('dark-theme');
