@@ -1,91 +1,111 @@
-:root {
-    --primary-color: hsl(var(--hue), 92%, 43%);
-    --primary-hover: hsl(var(--hue), 92%, 33%);
-    --secundary-color: hsl(0, 0%, 5%);
-    --third-color: hsla(0, 0%, 100%, 0.1);
-    --bg-color: hsl(0, 0%, 8%);
-    --headline: hsl(0, 0%, 100%);
-    --paragraph: hsla(0, 0%, 100%, 0.658);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
     background-color: #000;
     color: #fff;
+    overflow-x: hidden;
 }
-.menu {
+
+header {
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
     align-items: center;
-    background-color: hsl(var(--hue), 92%, 43%);
-    margin-right: 20%;
+    padding: 1rem 2rem;
 }
-.menu .logo {
+
+.logo {
     font-size: 1.5rem;
-    color: var(--primary-color);
-    margin-left: 6%;
+    font-weight: bold;
+    color: #00ff00;
 }
-.menu ul {
+
+.menu {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 1.5rem;
 }
-.menu ul li a {
+
+.menu a {
     text-decoration: none;
     color: #fff;
+    transition: color 0.3s;
+}  
+.menu a:hover {
+    color: #00ff00;
 }
-.hero {
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    margin-left: 1rem;
+}
+
+.intro {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 4rem 2rem;
 }
-.hero .text h2 {
+
+.text-content {
+    max-width: 50%;
+}
+
+.greeting {
     color: #00ff00;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
-.hero .text h1 {
-    font-size: 2.5rem;
+
+h1 {
+    font-size: 3rem;
 }
-.hero .text h3 {
-    margin-top: -10px;
+
+.description {
+    font-size: 1.5rem;
+    margin: 1rem 0;
 }
-.hero .contact-button {
+
+.contact-button {
+    background-color: transparent;
+    border: 2px solid #00ff00;
+    color: #00ff00;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.contact-button:hover {
     background-color: #00ff00;
     color: #000;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
 }
-.hero .image {
-    position: relative;
-}
-.hero .circle {
-    width: 200px;
-    height: 200px;
+
+.image-circle {
     background-color: #00ff00;
     border-radius: 50%;
-    position: absolute;
-    z-index: -1;
+    padding: 2rem;
 }
-footer .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px;
+
+.image-circle img {
+    max-width: 100%;
+    border-radius: 50%;
 }
-.theme-switcher {
+
+.theme-switch {
     position: fixed;
-    bottom: 10px;
-    left: 10px;
+    bottom: 1rem;
+    left: 1rem;
 }
+
 #theme-toggle {
-    background: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #00ff00;
     border: none;
-    color: #00ff00;
-    font-size: 1.5rem;
     cursor: pointer;
-}
-.fa-brands{
-    color: white;
 }
