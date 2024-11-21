@@ -6,6 +6,7 @@
     text-align: none;
     border: none;
     outline: none;
+    text-decoration: none;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
@@ -39,8 +40,8 @@ section{
     align-items: center;
     z-index: 100;
 }
-.header.sticky{
-    border-bottom: .1rem solid rgba(0,0,0 .2);
+.header.sticky {
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
 }
 .logo{
     font-size: 2.5rem;
@@ -48,14 +49,14 @@ section{
     font-weight: 600;
     cursor: default;
 }
-.navbar a{
+.navbar a {
     font-size: 1.7rem;
     color: var(--text-color);
     margin-left: 4rem;
-
+    transition: .3s;
 }
-.navbar a:hover,
-.navbar a.active:hover{
+.navbar a:hover, 
+.navbar a.active{
     color: var(--main-color);
 }
 #menu-icon{
@@ -329,4 +330,41 @@ span{
 }
 .footer-icontop a:hover{
     box-shadow: 0 0 1rem var(--main-color);
+}
+@media (max-width: 1200px) {
+    html{
+        font-size: 55%;
+    }
+    
+}
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+    section {
+        padding: 10rem 3% 2rem;
+    }
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--primeira-color);
+        border-top: .1rem solid rgba(74, 74, 74, 0.507);
+        box-shadow: 0 .5rem 1rem rgba(74, 74, 74, 0.507);
+    }
+    navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
 }
