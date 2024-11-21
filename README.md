@@ -11,7 +11,6 @@
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
         <i class='bx bx-menu' id="menu-icon"></i>
-
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#sobre">Sobre</a>
