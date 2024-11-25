@@ -73,6 +73,18 @@ section{
     width: 20vw;
     border-radius: 10px;
     margin: 20%;
+    animation: floatImage 4s ease-in infinite;
+}
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.4rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 .home-content{
     margin-left: .8rem;
@@ -332,7 +344,7 @@ span{
     box-shadow: 0 0 1rem var(--main-color);
 }
 @media (max-width: 1200px) {
-    html{
+    html {
         font-size: 55%;
     }
     
@@ -343,6 +355,15 @@ span{
     }
     section {
         padding: 10rem 3% 2rem;
+    }
+    .projetos {
+        padding-bottom: 7rem;
+    }
+    .recentes {
+        padding-bottom: 7rem;
+    }
+    .contato {
+        min-height: auto;
     }
     .footer {
         padding: 2rem 3%;
@@ -361,10 +382,73 @@ span{
         background: var(--primeira-color);
         border-top: .1rem solid rgba(74, 74, 74, 0.507);
         box-shadow: 0 .5rem 1rem rgba(74, 74, 74, 0.507);
+        display: none;
     }
-    navbar a{
+    .navbar.active{
+        display: block;
+    }
+    .navbar a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
+    }
+    .home {
+        flex-direction: column;
+    }
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+    .home-content h1 {
+        font-size: 5rem;
+    }
+    .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+        margin-left: 5rem;
+    }
+    .sobre {
+        flex-direction: column-reverse;
+    }
+    .sobre-img img {
+        width: 70vw;
+        margin-top: 4rem;
+        margin-left: 5rem;
+    }
+    .projetos h2 {
+        margin-bottom: 3rem;
+    }
+    .recentes h2 {
+        margin-bottom: 3rem;
+    }
+    .recentes-content {
+        grid-template-columns: repeat(2, 1fr) ;
+    }
+}
+@media (max-width: 617px) {
+    .recentes-content {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    .contato form .input-box input {
+        width: 100%;
+    }
+}
+@media (max-width: 365px) {
+    .home-img img {
+        width: 90vw;
+    }
+    .sobre-img img {
+        width: 90vw;
+    }
+    .footer {
+        flex-direction: column-reverse;
+    }
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
     }
 }
