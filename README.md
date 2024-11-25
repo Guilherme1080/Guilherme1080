@@ -1,3 +1,12 @@
+<h1 align="center">Portifólio - Guilherme 💻</h1>
+
+![Imagem do projeto finalizado](portfolio/img/print.png)
+
+<h4 align="center"><a href="https://guilherme1080-kgtc.vercel.app/">Confira o projeto aqui</a></h4>
+
+---
+
+
 <div style="text-align: center;" align="center">
   <h3>* GitHub Stats *</h3>
   <br>
