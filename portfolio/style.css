@@ -87,6 +87,7 @@ section{
 span{
     color: var(--main-color);
 }
+
 .home-content h1{
     font-size: 5.6rem;
     font-weight: 700;
@@ -203,7 +204,7 @@ span{
 }
 .recentes-content{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2.5rem;
 }
