@@ -1,6 +1,6 @@
 <h1 align="center">Portifólio - Guilherme 💻</h1>
 
-![Imagem do projeto finalizado](portfolio/img/print.png)
+![Imagem do projeto finalizado](portfolio/img/portifolio.png)
 
 <h4 align="center"><a href="https://guilherme1080-kgtc.vercel.app/">Confira o projeto aqui</a></h4>
 
