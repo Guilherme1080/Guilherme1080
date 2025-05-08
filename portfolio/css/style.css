@@ -453,3 +453,9 @@ span{
         margin-top: 2rem;
     }
 }
+img.foto-icone{
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+}

@@ -1,0 +1,9 @@
+:root{
+    --primeira-color: #0e0e0e;
+    --segunda-color: #24242480;
+    --text-color: #fff;
+    --main-color: rgba(8, 156, 6, 0.842);
+}
+.recentes{
+    background-color: var(--primeira-color);
+}

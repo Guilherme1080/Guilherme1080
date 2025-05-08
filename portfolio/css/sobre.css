@@ -1,0 +1,24 @@
+:root{
+    --primeira-color: #0e0e0e;
+    --segunda-color: #24242480;
+    --text-color: #fff;
+    --main-color: rgba(8, 156, 6, 0.842);
+}
+
+.sobre-cor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--primeira-color);
+}
+.heading-sobre{
+    text-align: center;
+    font-size: 4.5rem;
+    margin-left: 40%;
+}
+.sobre-content h3{
+    font-size: 2.6rem;
+    margin-left: 38%;
+    margin-bottom: 5%;
+}
