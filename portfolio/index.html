@@ -61,6 +61,7 @@
             <img class="foto-icone" align="center" margin="" alt="Rafa-php" height="100" width="200" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
             <img class="foto-icone" align="center" alt="Rafa-php" height="100" width="200" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
             <img class="foto-icone" align="center" alt="Rafa-php" height="100" width="200" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+            <img class="foto-icone" align="center" alt="Rafa-php" height="100" width="200" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
         </div>
     </section>
     <section class="recentes" id="Projeto">
@@ -90,18 +91,22 @@
     </section>
     <section class="contato" id="contato">
         <h2 class="heading">Contato</h2>
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="Email">
+            <form action="contato_composer.php" method="POST">
+                <div class="input-box">
+                    <input type="text" name="nome" placeholder="Nome" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="number" name="celular" placeholder="Celular" required>
+                    <input type="text" name="assunto" placeholder="Assunto: ">
+                    <textarea name="mensagem" cols="30" rows="10" placeholder="mensagem:"></textarea>
+                    <button id="btn_enviar" type="submit" value="Enviar" class="btn">Enviar</button>
+                </div>
+            </form>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <p id="modal-message">Mensagem enviada!</p>
+                    <button onclick="closeModal()">OK</button>
+                </div>
             </div>
-            <div class="input-box">
-                <input type="number" placeholder="Celular">
-                <input type="text" placeholder="Assunto:">
-            </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="mensagem: "></textarea>
-            <input type="submit" value="Enviar" class="btn">
-        </form>
     </section>
     <footer class="footer">
         <div class="footer-text">
@@ -115,7 +120,5 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="js/script.js"></script>
-    
-
 </body>
 </html>

@@ -23,18 +23,22 @@
     </header>
     <section class="contato" id="contato">
         <h2 class="heading">Contato</h2>
-        <form action="#">
+        <form action="contato_composer.php" method="POST">
             <div class="input-box">
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="Email">
+                <input type="text" name="nome" placeholder="Nome" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="number" name="celular" placeholder="Celular" required>
+                <input type="text" name="assunto" placeholder="Assunto: ">
+                <textarea name="mensagem" cols="30" rows="10" placeholder="mensagem:"></textarea>
+                <button id="btn_enviar" type="submit" value="Enviar" class="btn">Enviar</button>
             </div>
-            <div class="input-box">
-                <input type="number" placeholder="Celular">
-                <input type="text" placeholder="Assunto:">
-            </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="mensagem: "></textarea>
-            <input type="submit" value="Enviar" class="btn">
         </form>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <p id="modal-message">Mensagem enviada com sucesso!</p>
+                <button onclick="closeModal()">OK</button>
+            </div>
+        </div>
     </section>
     <footer class="footer">
         <div class="footer-text">

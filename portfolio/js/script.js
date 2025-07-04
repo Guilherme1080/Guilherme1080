@@ -51,3 +51,34 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 });
+
+document.querySelector("form").addEventListener("submit", async function(e){
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    const response = await fetch("contato_composer.php", {
+        method: "POST",
+        body: formData
+    });
+
+    const result = await response.json();
+
+    const modal = document.getElementById("modal");
+    const modalMsg = document.getElementById("modal-message");
+
+    if(result.success){
+        modalMsg.innerText = result.message;
+        form.reset();
+    } else {
+        modalMsg.innerText = "Erro ao enviar: " + result.message;
+    }
+
+    modal.style.display = "flex";
+});
+
+function closeModal(){
+    document.getElementById("modal").style.display = "none";
+}
+
