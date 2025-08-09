@@ -220,17 +220,26 @@ span{
     align-items: center;
     gap: 2.5rem;
 }
-.recentes-box{
-    position: relative;
+.recentes-box {
+    width: 30rem;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--primeira-color);
     overflow: hidden;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.recentes-box img{
+
+.recentes-box img {
     width: 100%;
+    height: auto;
+    max-height: 200px; /* limita altura pra não esticar demais */
+    border-radius: 2rem 2rem 0 0;
+    object-fit: cover;
     transition: .5s ease;
 }
+
 .recentes-box:hover img{
     transform: scale(1.1);
 }
@@ -275,6 +284,9 @@ span{
 .recentes-layer a i{
     font-size: 2rem;
     color: var(--segunda-color);
+}
+.contato{
+    background-color: var(--segunda-color);
 }
 .contato h2{
     margin-bottom: 3rem;
@@ -322,7 +334,7 @@ span{
     align-items: center;
     flex-direction: wrap;
     padding: 2rem 9%;
-    background: var(--segunda-color);
+    background: var(--primeira-color);
 }
 .footer-text p{
     font-size: 1.6rem;
@@ -507,4 +519,62 @@ img.foto-icone{
 @keyframes slideIn {
     from { transform: translateY(-50px); opacity: 0; }
     to   { transform: translateY(0); opacity: 1; }
+}
+.formacao {
+    background-color: var(--primeira-color);
+    padding-bottom: 5rem;
+}
+
+.formacao-content {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.formacao-box {
+  background-color: var(--primeira-color);
+  border-radius: 2rem;
+  padding: 2rem 2rem 3rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  flex: 1 1 25rem;
+  text-align: center;
+  cursor: default;
+  transition: transform 0.3s ease;
+}
+
+.formacao-box:hover {
+  transform: scale(1.05);
+}
+
+.formacao-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1.5rem auto;
+  display: block;
+  box-shadow: 0 0 10px var(--main-color);
+}
+
+.formacao-box h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  color: var(--main-color);
+}
+
+.formacao-box p {
+  font-size: 1.6rem;
+  color: var(--text-color);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .formacao-content {
+    flex-direction: column;
+    align-items: center;
+  }
 }
